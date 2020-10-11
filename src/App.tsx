@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
-import './App.css';
+import './styles/styles.scss';
 
 const App: FC = () => (
-  <div>Catalog</div>
+  <button className="button">Hello</button>
 );
 
 export default App;
