@@ -1,0 +1,26 @@
+@import '../../styles/styles.scss';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: $color-secondary-dark;
+}
+
+.left {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.cart {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: $resolution-tablet) {
+  .left {
+    flex-direction: row-reverse;
+  }
+}

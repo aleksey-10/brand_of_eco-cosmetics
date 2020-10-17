@@ -15,7 +15,33 @@ html {
 }
 
 .App {
+  min-height: 100vh;
   font-family: 'Roboto', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin: 0;
   color: $color-primary;
+  background-color: $color-background;
+}
+
+.container {
+  padding-top: 40px;
+  margin: 0 50px;
+  
+  @media (max-width: $resolution-tablet) {
+    padding-top: 22px;
+    margin: 0 27px;
+  }
+
+  @media (max-width: $resolution-mobile) {
+    padding-top: 15px;
+    margin: 0 20px;
+  }
+}
+
+a {
+  display: inline-block;
+  @include transition(color);
+
+  &:hover {
+    color: $color-secondary;
+  }
 }

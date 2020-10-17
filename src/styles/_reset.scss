@@ -17,11 +17,17 @@ button {
   cursor: pointer;
 }
 
+a {
+  color: inherit;
+}
+
 button {
+  background: inherit;
   border: none;
   padding: 0;
 }
 
 ul {
   padding-left: 0;
+  list-style-type: none;
 }
