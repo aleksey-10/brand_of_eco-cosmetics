@@ -10,12 +10,9 @@ export const Header: FC = () => {
         <Logo />
         <Menu />
       </div>
-      <div className={styles.cart}>
-        <img
-          src={cart}
-          alt="Cart"
-        />
-      </div>
+      <button className={styles.cart} type="button">
+        <img src={cart} alt="Cart" />
+      </button>
     </header>
   );
 };
