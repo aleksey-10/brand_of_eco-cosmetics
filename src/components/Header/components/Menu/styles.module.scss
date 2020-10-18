@@ -24,12 +24,64 @@
   display: none;
 }
 
+.mobileMenu {
+  display: none;
+  transform: translateX(100%);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: $color-primary;
+
+  @include transition(transform);
+}
+
+.mobileMenuActive {
+  transform: translateY(0);
+}
+
+.times {
+  display: flex;
+  align-items: center;
+}
+
+.mobileItem {
+  color: $color-light;
+  border-bottom: 1px solid $color-light-grey;
+}
+
+.mobileLink {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0 10px;
+  font-size: 1.125rem;
+  line-height: 1.3em;
+
+  @include transition(color);
+
+  &:hover {
+    color: $color-light-grey;
+  }
+}
+
 @media (max-width: $resolution-tablet) {
   .nav {
     display: none;
   }
 
   .burger {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+  }
+
+  .mobileMenu {
+    display: block;
+  }
+}
+
+@media (max-width: $resolution-mobile) {
+  .mobileLink {
+    padding-top: 30px;
   }
 }
