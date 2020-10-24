@@ -6,7 +6,7 @@ import times from '../../../../assets/icons/times.svg';
 import { menuList } from '../../../../services/Menu';
 
 export const Menu: FC = () => {
-  const [isMobileMenuActive, setMobileMenuActive] = useState<boolean>(true);
+  const [isMobileMenuActive, setMobileMenuActive] = useState<boolean>(false);
 
   const mobileMenuClassNames = classnames({
     [styles.mobileMenu]: true,
